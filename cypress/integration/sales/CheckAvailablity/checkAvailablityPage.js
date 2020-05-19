@@ -15,6 +15,23 @@ export class CheckAvailabilityPage{
     addressPopupDisplayed(){
         cy.get('.modal-dialog').should('be.visible') 
     }
+    
+
+    clickAddressConfirmButton(){
+        cy.get('[data-message-code="availability.confirm.address.button"]').click()
+    }
+
+    verifyAddressDetails(){
+        cy.get('@getPostcode').then((postcode) => {
+            const p = postcode
+            cy.get(".address-detail").should('contain', p)
+          })
+    
+          cy.get('@getHouseNumber').then((houseNumber) => {
+            const h = houseNumber
+            cy.get(".address-detail").should('contain', h)
+          }) 
+    }
 
 }
 
