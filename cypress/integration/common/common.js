@@ -3,7 +3,7 @@ import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 import { checkAvailabilityPage } from '../sales/CheckAvailablity/checkAvailablityPage'
 
 Given('I navigate to virgin media website', () => {
-    cy.visit('/')
+    cy.visit('/virgin')
     cy.get('#consent_prompt_submit').click()
 })
 

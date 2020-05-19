@@ -31,6 +31,6 @@ function processConfig(on, config) {
 }
 
 function getConfigurationByFile(file) {
-  const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
+  const pathToConfigFile = path.resolve('cypress', 'config', `../integration/config/${file}.json`)
   return fs.readJson(pathToConfigFile)
 }
