@@ -7,7 +7,9 @@
     "cy:open": "cypress open",
     "pretest": "node ./cypress/reporting/delete-results.js",
     "report": "node ./cypress/reporting/report.js",
-    "test": "cypress run"
+    "test": "cypress run --env configFile=sales",
+    "sales-tests":"node ./cypress/reporting/delete-results.js && cypress run --env configFile=sales",
+    "care-tests":"node ./cypress/reporting/delete-results.js && cypress run --env configFile=care"
   },
   "keywords": [
     "Cypress",
