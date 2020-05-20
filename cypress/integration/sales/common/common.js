@@ -1,6 +1,5 @@
-/// <reference types="Cypress" />
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
-import { checkAvailabilityPage } from '../sales/CheckAvailablity/checkAvailablityPage'
+import { checkAvailabilityPage } from '../CheckAvailablity/checkAvailablityPage'
 
 Given('I navigate to virgin media website', () => {
     cy.visit('/virgin')
