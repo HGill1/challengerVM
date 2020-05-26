@@ -1,9 +1,11 @@
+@sales-ui
 Feature: Check broadband availbility
 
     As a valid user
     I should be able to see prducts avaialble to me
     in my postcode area
 
+    @check-availbility
     Scenario Outline: Check broadband availability for a valid postcode and house number
         Given I navigate to virgin media website
         When I enter a valid postcode "<Postcode>"

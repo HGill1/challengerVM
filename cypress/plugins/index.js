@@ -24,7 +24,7 @@ module.exports = (on, config) => {
 }
 
 function processConfig(on, config) {
-  const file = config.env.configFile || 'environment'
+  const file = config.env.configFile || 'sales'
   return getConfigurationByFile(file).then((file) => {
     return file
   })

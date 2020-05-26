@@ -14,7 +14,7 @@
             "value":"(a|b)"
         },
         {
-            "parameter":/\{a.*\}/,
+            "parameter":"/{a.*}/",
             "value":"a"
         },
     ],
