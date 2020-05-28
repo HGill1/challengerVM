@@ -8,7 +8,7 @@
     "pretest": "node ./cypress/reporting/delete-results.js",
     "report": "node ./cypress/reporting/report.js",
     "test": "cypress run --env configFile=sales",
-    "sales-tests": "npm run pretest && cypress run --env configFile=sales --spec \"**/sales/*.feature\"",
+    "sales-tests": "npm run pretest && cypress run --env configFile=sales --spec \"**/sales/product.feature\"",
     "sales:tags:tests": "npm run pretest && cypress-tags run -e TAGS='@check-availbility' --env configFile=sales",
     "care-tests": "npm run pretest && cypress run --env configFile=care --spec \"**/care/*.feature\""
   },

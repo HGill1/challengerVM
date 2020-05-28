@@ -1,3 +1,4 @@
 node_modules
 cypress/test-results
 cypress/screenshots
+.DS_Store
